@@ -19,4 +19,6 @@ $(document).ready(function(){
 
     // Toggle for the second card
     toggleCard('#toggleButton2', '#secondCard');
+
+    toggleCard('#toggleButton3', '#thirdCard');
 });
