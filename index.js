@@ -7,9 +7,9 @@ $(document).ready(function(){
             console.log(buttonId + " clicked");
             $(cardId).toggle();
             if ($(cardId).is(':visible')) {
-                $(buttonId).text('Hide');
+                $(buttonId).text('Hide Message');
             } else {
-                $(buttonId).text('Show');
+                $(buttonId).text('Show Message');
             }
         });
     }
