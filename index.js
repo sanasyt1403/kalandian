@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    console.log("Script loaded for landingpage.html");
-
     // Function to toggle a card
     function toggleCard(buttonId, cardId) {
         $(buttonId).click(function(){
