@@ -2,7 +2,6 @@ $(document).ready(function(){
     // Function to toggle a card
     function toggleCard(buttonId, cardId) {
         $(buttonId).click(function(){
-            console.log(buttonId + " clicked");
             $(cardId).toggle();
             if ($(cardId).is(':visible')) {
                 $(buttonId).text('Hide Message');
@@ -12,6 +11,18 @@ $(document).ready(function(){
         });
     }
 
+    function toggleDisclaimer(buttonId, cardId) {
+        $(buttonId).click(function(){
+            $(cardId).toggle();
+            if ($(cardId).is(':visible')) {
+                $(buttonId).text('Hide Message');
+            } else {
+                $(buttonId).text('Ito muna');
+            }
+        });
+    }
+
+    toggleDisclaimer('#toggleDisclaimer', '#disclaimer');
     // Toggle for the first card
     toggleCard('#toggleButton1', '#firstCard');
 
@@ -26,7 +37,7 @@ function getGreeting() {
     const currentHour = currentDate.getHours();
 
     if (currentHour < 12) {
-        return "Good Morning! Sana okay ka pa :))";
+        return "Good Morning! I hopee u're okay paaa :))";
     } else if (currentHour < 18) {
         return "Good Afternoon!";
     } else {
