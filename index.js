@@ -2,6 +2,7 @@ $(document).ready(function(){
     // Function to toggle a card
     function toggleCard(buttonId, cardId) {
         $(buttonId).click(function(){
+            console.log("clicked" + buttonId)
             $(cardId).toggle();
             if ($(cardId).is(':visible')) {
                 $(buttonId).text('Hide Message');
@@ -23,12 +24,8 @@ $(document).ready(function(){
     }
 
     toggleDisclaimer('#toggleDisclaimer', '#disclaimer');
-    // Toggle for the first card
     toggleCard('#toggleButton1', '#firstCard');
-
-    // Toggle for the second card
     toggleCard('#toggleButton2', '#secondCard');
-
     toggleCard('#toggleButton3', '#thirdCard');
     toggleCard('#toggleButton4', '#fourthCard');
 });
