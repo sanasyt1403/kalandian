@@ -31,6 +31,7 @@ $(document).ready(function(){
     toggleCard('#toggleButton5', '#fifthCard');
     toggleCard('#toggleButton6', '#sixthCard');
     toggleCard('#toggleButton7', '#seventhCard');
+    toggleCard('#toggleButton8', '#eighthCard');
 });
 
 function getGreeting() {
